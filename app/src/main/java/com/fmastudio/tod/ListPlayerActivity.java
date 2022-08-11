@@ -16,10 +16,11 @@ import java.util.*;
 import java.util.ArrayList;
 import java.util.List;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class ListPlayerActivity extends AppCompatActivity {
 
-    private List<ListPlayerModel> listPlayer = new ArrayList<>();
+    private ArrayList<ListPlayerModel> listPlayer = new ArrayList<ListPlayerModel>();
     private MaterialButton addBtn, playBtn;
     private TextView namaText;
 
@@ -28,7 +29,7 @@ public class ListPlayerActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_player);
 
-        addBtn = findViewById(R.id.btn_addplayer);
+        addBtn  = findViewById(R.id.btn_addplayer);
         playBtn = findViewById(R.id.btn_play);
 
         addBtn.setOnClickListener(new View.OnClickListener() {
@@ -50,7 +51,14 @@ public class ListPlayerActivity extends AppCompatActivity {
         playBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                startActivity(new Intent(getApplicationContext(), RouletteActivity.class));
+                if(listPlayer.size() > 1) {
+                    Intent intent = new Intent(getApplicationContext(),RouletteActivity.class);
+                    intent.putExtra("list_player", listPlayer);
+                    startActivity(intent);
+                }
+                else {
+                    Toast.makeText(getApplicationContext(),"Minimal 2 Orang Pemain",Toast.LENGTH_LONG).show();
+                }
             }
         });
     }

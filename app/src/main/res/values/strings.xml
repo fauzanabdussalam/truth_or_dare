@@ -1,6 +1,13 @@
 <resources>
     <string name="app_name">Truth or Dare</string>
+    <string name="mulai">Mulai</string>
+    <string name="about">Tentang Aplikasi</string>
+    <string name="exit">Keluar</string>
+    <string name="truth">Truth</string>
+    <string name="dare">Dare</string>
     <string name="about_desc">Truth or dare adalah sebuah permainan yang dimainkan oleh dua orang atau lebih dimana setiap pemain secara bergantian menjawab pertanyaan (truth) atau melakukan tantangan (dare) yang diberikan oleh pemain lainnya.</string>
     <string name="app_version">Version 1.0</string>
     <string name="pemain">Daftar Pemain</string>
+    <string name="ex_question">Berikan ponselmu kepada salah satu di antara kita dan biarkan orang tersebut mengirim satu pesan kepada siapapun yang dia mau.</string>
+    <string name="play_again">Main Lagi</string>
 </resources>

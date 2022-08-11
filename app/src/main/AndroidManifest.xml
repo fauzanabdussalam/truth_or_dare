@@ -33,6 +33,14 @@
             android:name=".AboutAppsActivity"
             android:exported="true">
         </activity>
+        <activity
+            android:name=".RouletteActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".QuestionActivity"
+            android:exported="true">
+        </activity>
     </application>
 
 </manifest>

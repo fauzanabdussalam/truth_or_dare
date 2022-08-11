@@ -11,9 +11,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/app]" />
-            <option value="$PROJECT_DIR$/luckyWheel" />
-            <option value="$PROJECT_DIR$/luckyWheel2" />
+            <option value="$PROJECT_DIR$/library" />
           </set>
         </option>
       </GradleProjectSettings>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/main_color"
+    android:baselineAligned="false"
+    tools:context=".QuestionActivity">
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen20"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/line"
+        android:fontFamily="@font/lovelo_black"
+        android:text="@string/dare"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen26"/>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="@dimen/dimen100"
+        android:layout_height="2dp"
+        android:background="@color/white"
+        android:layout_centerInParent="true"
+        android:layout_above="@id/txt_question"
+        android:layout_marginBottom="@dimen/dimen5"/>
+
+    <TextView
+        android:id="@+id/txt_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dimen24"
+        android:layout_marginRight="@dimen/dimen24"
+        android:layout_marginStart="@dimen/dimen20"
+        android:layout_marginEnd="@dimen/dimen20"
+        android:layout_marginTop="@dimen/dimen10"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/ex_question"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen18" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_play_again"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/dimen20"
+        android:layout_marginTop="@dimen/dimen20"
+        android:layout_marginEnd="@dimen/dimen20"
+        android:layout_marginBottom="@dimen/dimen20"
+        android:backgroundTint="@color/green"
+        android:text="@string/play_again"
+        android:textColor="@color/white" />
+</RelativeLayout>

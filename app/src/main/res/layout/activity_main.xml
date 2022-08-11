@@ -19,12 +19,12 @@
         android:id="@+id/txt_logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
         android:layout_centerInParent="true"
         android:fontFamily="@font/lovelo_black"
         android:text="@string/app_name"
         android:textColor="@color/white"
-        android:textSize="@dimen/dimen18"
-        android:layout_below="@+id/logo"/>
+        android:textSize="@dimen/dimen18" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_start"
@@ -35,7 +35,7 @@
         android:fontFamily="@font/lovelo_black"
         android:textColor="@color/white"
         app:cornerRadius="@dimen/dimen50"
-        android:text="Mulai"/>
+        android:text="@string/mulai"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_about"
@@ -47,7 +47,7 @@
         android:textColor="@color/white"
         android:layout_below="@+id/btn_start"
         app:cornerRadius="@dimen/dimen50"
-        android:text="Tentang Aplikasi"/>
+        android:text="@string/about"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_exit"
@@ -57,7 +57,7 @@
         android:layout_centerInParent="true"
         android:backgroundTint="@color/red"
         android:fontFamily="@font/lovelo_black"
-        android:text="Keluar"
+        android:text="@string/exit"
         android:textColor="@color/white"
         app:cornerRadius="@dimen/dimen50"/>
 
