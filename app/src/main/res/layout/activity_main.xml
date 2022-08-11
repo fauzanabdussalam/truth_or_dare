@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/main_color"
+    android:baselineAligned="false"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_marginTop="@dimen/dimen150"
+        android:src="@drawable/tod_2" />
+
+    <TextView
+        android:id="@+id/txt_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/lovelo_black"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen18"
+        android:layout_below="@+id/logo"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_start"
+        android:layout_width="@dimen/dimen250"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:backgroundTint="@color/blue"
+        android:fontFamily="@font/lovelo_black"
+        android:textColor="@color/white"
+        app:cornerRadius="@dimen/dimen50"
+        android:text="Mulai"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_about"
+        android:layout_width="@dimen/dimen250"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:backgroundTint="@color/green"
+        android:fontFamily="@font/lovelo_black"
+        android:textColor="@color/white"
+        android:layout_below="@+id/btn_start"
+        app:cornerRadius="@dimen/dimen50"
+        android:text="Tentang Aplikasi"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_exit"
+        android:layout_width="@dimen/dimen250"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_about"
+        android:layout_centerInParent="true"
+        android:backgroundTint="@color/red"
+        android:fontFamily="@font/lovelo_black"
+        android:text="Keluar"
+        android:textColor="@color/white"
+        app:cornerRadius="@dimen/dimen50"/>
+
+
+</RelativeLayout>
