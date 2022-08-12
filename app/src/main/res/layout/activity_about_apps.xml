@@ -52,7 +52,6 @@
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:layout_alignParentBottom="true"
-                android:gravity="bottom"
                 android:layout_marginBottom="@dimen/dimen20"
                 android:fontFamily="@font/montserrat"
                 android:text="@string/app_version"
